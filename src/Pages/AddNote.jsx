@@ -72,7 +72,7 @@ class AddNote extends React.Component {
   }
 }
 
-Addnote.proptypes = {
+AddNote.proptypes = {
   navigate: PropTypes.func.isRequired,
   
 }
