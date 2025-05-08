@@ -13,7 +13,7 @@ const HomePageWrapper = () => {
   const search = (title) => {
     setSearchParams({ search: title });
   };
-
+  //? validasi props untuk default keyword
   return <HomePage defaultKeyword={keyword} search={search} />;
 };
 
@@ -66,6 +66,9 @@ class HomePage extends React.Component {
   }
 }
 HomePage.propTypes = {
-  search: PropTypes.func.isRequired
+  search: PropTypes.func.isRequired,
+  /*?
+  defaultKeyword: 
+  */
 }
 export default HomePageWrapper;

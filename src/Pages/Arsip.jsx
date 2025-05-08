@@ -11,6 +11,7 @@ const ArsipWrap = () => {
   const search = (title) => {
     setSearchParams({ search: title });
   };
+  //? validasi props untuk default keyword
   return <Arsip defaultKeyword={keyword} search={search} />;
 };
 
@@ -60,5 +61,8 @@ class Arsip extends React.Component {
 }
 Arsip.propTypes = {
   search: PropTypes.func.isRequired
+  /*?
+  defaultKeyword: 
+  */
 }
 export default ArsipWrap;
